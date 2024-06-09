@@ -1,0 +1,334 @@
+/* General styling */
+body {
+    background: #f5f5f5; /* Set a light grey background color */
+    color: #000; /* Set the text color to black */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbarScroll {
+    background-color: black !important;
+}
+
+/* Hero section styling */
+.resources-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh; /* Adjust the height to be smaller */
+    background-color: #fff; /* Ensure background is white */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding for spacing */
+    margin-top: 80px; /* Adjust the value as needed */
+    margin-bottom: 20px; /* Adjust spacing below the hero section */
+}
+
+/* Hero title styling */
+.hero_title {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add some space below the title */
+    color: #000; /* Ensure the text color is black */
+}
+
+/* Hero description styling */
+.hero_desc {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #000; /* Ensure the text color is black */
+}
+
+/* Main content styling */
+.main-content {
+    background-color: #fff;
+    width: 80%;
+    margin: 20px auto; /* Adjusted to provide space between the hero section and the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 20px; /* Added padding for content */
+}
+
+/* Section box styling */
+.section-box {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 20px; /* Space inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
+    background-color: #fff; /* White background */
+}
+
+/* About section image styling */
+.imageAboutPage {
+    width: 100%;
+    max-width: 300px; /* Control the maximum width of the image */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* About text styling */
+.about-text {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some space between the image and the text */
+}
+
+/* Services section styling */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+}
+
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card:hover .servicesIcon {
+    color: #008000;
+}
+
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-link:hover, .card-link:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+
+.fab {
+    color: #000000;
+}
+
+/* Footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+/* Section accent styling */
+.section-accent {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Reduce the margin */
+    border-top: 4px solid #2d2f30;
+    padding-top: 1rem; /* Reduce padding */
+    padding-bottom: 1rem; /* Reduce padding */
+}
+
+.section-accent a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.section-accent a:hover {
+    text-decoration: underline;
+}
+
+/* Card styling */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensure all cards take the full height available */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(33.333% - 30px);
+    margin: 15px;
+    flex-grow: 1;
+    height: 100%; /* Ensure all cards take the full height available */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure spacing between elements */
+}
+
+/* Card text styling */
+.card-text {
+    flex-grow: 1;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* General section margin */
+section {
+    margin-top: 70px; /* General margin for all sections */
+}
+
+/* Reduce margin between h1 and h3, and remove bold from h3 */
+h3.normal-weight {
+    margin-top: 10px; /* Adjust the value as needed for closer spacing */
+    font-weight: normal; /* Remove bold */
+}
+
+/* Style the horizontal line */
+hr.my-4 {
+    border: 0;
+    border-top: 2px solid #000; /* Increase the thickness and change the color to black */
+    margin: 1.5rem 0; /* Adjust the spacing as needed */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the links */
+.about-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.about-links .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about-links .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.about-links .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about-links .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Styling for images in the article */
+.article-image {
+    max-width: 60%; /* Adjust the maximum width as needed */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the images and add vertical spacing */
+    border: 1px solid #ddd; /* Optional: Add a border around the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+
+/* Additional styling for articles */
+#article-container h2,
+#article-container p {
+    margin: 15px 0;
+}
+
+#article-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Indent lines starting with numbers */
+.numbered-line {
+    text-indent: 2em; /* Adjust the indent size as needed */
+}
+
+/* Indent lines starting with hyphens */
+.indented-line {
+    text-indent: 2em; /* Adjust the indent size as needed */
+}
+
+/* Italicize lines starting with 'Step' */
+.italic-line {
+    font-style: italic; /* Italicize text */
+}
+
+.contact-section {
+    margin-top: 25px;  /* Adjust the value as needed */
+    margin-bottom: 50px;  /* Adjust the value as needed */
+}
+
+/* Specific styling for the Contact Me header */
+.contact-section h1 {
+    margin-top: 70px;  /* Adjust the value as needed */
+   
+}
+
+/* Social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img.social-icon {
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-linkedin:hover, .fa-github:hover, .social-icons img.social-icon:hover {
+    color: #008000;
+    filter: brightness(0.8); /* Darken the image on hover */
+}
+
+.fab {
+    color: #000000;
+}
+
+
+
+
+
+
+
+  
